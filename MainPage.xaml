@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EgzaminProbny1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+         Padding="30,0"
+         Spacing="25"
+         Margin="20"
+         >
+
+            <Label 
+             Text="Właściwości czcionki"
+             FontSize="32"
+             FontAttributes="Bold"
+             HorizontalOptions="Center" 
+             TextColor="White"
+             BackgroundColor="#558B2F"/>
+            <Label 
+             Text="Rozmiar: "
+             FontSize="Medium"
+             HorizontalOptions="Center" 
+             x:Name="fontSizeDisplay"/>
+            <Slider 
+             x:Name="fontSlider"
+             Minimum="0"
+             Maximum="40"
+             ValueChanged="OnFontSliderChange"
+             Value="0" />
+            <Label 
+             Text="Dzień dobry"
+             FontSize="Medium"
+             x:Name="messageDisplay"
+             HorizontalOptions="Center" />
+            <Button 
+             Text=">>"
+             x:Name="displayButton"
+             Clicked="OnDisplayButtonClicked"
+             FontSize="20"
+             FontAttributes="Italic"
+             HorizontalOptions="Center"
+             BackgroundColor="#558B2F"
+             TextColor="White"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>
